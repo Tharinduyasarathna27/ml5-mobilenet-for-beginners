@@ -1,4 +1,3 @@
-let video;
 let mobilenet;
 let img;
 
@@ -19,15 +18,7 @@ function setup() {
   img = createImg('images/backpack.jpg', imageReady);
   img.hide();
   background(0);
-  // video = createCapture(VIDEO);
-  // video.hide();
   mobilenet = ml5.imageClassifier('MobileNet', modelReady);
-  // resultP = createP('wait...');
-}
-
-function draw() {
-  // image(video,0,0,329,240);
-  // put drawing code here
 }
 
 function modelReady(){
